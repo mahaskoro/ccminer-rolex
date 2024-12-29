@@ -3,6 +3,7 @@
 Based on: https://github.com/Darktron/ccminer
 
 Install arm64-v8a Termux versi 118 : https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
+
 Untuk cek rilis Termux terbaru : https://github.com/termux/termux-app/releases
 
 Lanjutkan dengan instalasi, konfigurasi dan kompilasi :
@@ -44,7 +45,7 @@ CXX=clang++ CC=clang ./build.sh
 ```
 cd && cd && cd && nano ../usr/etc/bash.bashrc
 ``` 
-Salin perintah ini kebaris paling bawah;
+   Salin perintah ini kebaris paling bawah;
 ```
 cd ccminer/&&./start.sh
 ``` 
