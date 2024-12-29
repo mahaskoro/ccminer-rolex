@@ -37,7 +37,7 @@ CXX=clang++ CC=clang ./build.sh
 
 4. Coba jalankan miner dengan perintah berikut:
 ```
-~/ccminer/start.sh
+~/ccminer-v1808/start.sh
 ```
 
 5. BONUS
@@ -47,5 +47,5 @@ cd && cd && cd && nano ../usr/etc/bash.bashrc
 ``` 
    Salin perintah ini kebaris paling bawah;
 ```
-cd ccminer/&&./start.sh
+cd ccminer-v1808/&&./start.sh
 ``` 
