@@ -35,7 +35,13 @@ chmod +x build.sh configure.sh autogen.sh start.sh
 CXX=clang++ CC=clang ./build.sh
 ```
 
-4. Coba jalankan miner dengan perintah berikut:
+4. Tes miner:
+   Sebelum melakukan tes, atur dulu pool, dompet dan nama worker
+```
+nano config.json
+```
+   Berikutnya lakukan tes hasil kompilasi miner:
+
 ```
 ~/ccminer-v1808/start.sh
 ```
