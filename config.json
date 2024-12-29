@@ -1,7 +1,7 @@
 {
     "pools":
         [{
-            "name": "LUCKPOOL ASIA-PACFIC",
+            "name": "LUCKPOOL ASIA-PACFIC 1",
             "url": "stratum+tcp://ap.luckpool.net:3956",
             "timeout": 180,
             "disabled": 0
