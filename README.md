@@ -10,14 +10,22 @@ Lanjutkan dengan instalasi, konfigurasi dan kompilasi :
 1. Memasang clang dan paket-paket lain yang diperlukan:
 ```
 yes | pkg update && pkg upgrade -y
+```
+```
 yes | pkg install libjansson build-essential clang binutils git -y
 ```
 
 2. Atur environment & kloning repo:
 ```
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
+```
+```
 git clone https://github.com/mahaskoro/termux-ccminer-v1808.git
+```
+```
 cd ccminer
+```
+```
 chmod +x build.sh configure.sh autogen.sh start.sh
 ```
 
