@@ -2,19 +2,19 @@
 
 Based on: https://github.com/Darktron/ccminer
 
-Repositori ini merupakan adaptasi ccminer pada Termux untuk mesin Vivo Y81 (1808) untuk menambang koin Verus.
+Repositori ini merupakan adaptasi ccminer pada Termux untuk penambangan koin Verus dengan menggunakan mesin Vivo Y81 (1808).
 
-Meskipun begitu tdak menutup kemungkinan digunakan pada mesin lain dengan spesifikasi yang mirip.
-Kunci utama dari konfigurasi repositori ini adalah chipset koin Verus, Android 7 dan chipset Cortex A53.
+Meskipun begitu, tidak menutup kemungkinan digunakan pada mesin lain dengan spesifikasi yang mirip.
+Kunci utama dari konfigurasi repositori ini adalah koin Verus, Android 7 dan chipset Cortex A53.
 
-Jika ingin menggunakan hape untuk menambang selain koin Verus, harap melakukan riset terlebih dahulu dan melakukan penyesuaian-penyesuaian yang diperlukan.
+Jika ingin menggunakan hape untuk menambang koin selain Verus, harap melakukan riset terlebih dahulu dan melakukan penyesuaian-penyesuaian yang diperlukan.
 
-Mesin dengan Android 5 dan 6 tidak bisa menggunakan repositori ini karena perbedaan versi Termux yang berbeda dan begitu pula paket-paket pendukungnya.
+Mesin dengan Android 5 dan 6 tidak bisa menggunakan repositori ini karena perbedaan versi Termux dan begitu pula paket-paket pendukungnya.
 
-Mesin dengan chipset selain Cortex A53 masih mungkin menggunakan repositori ini dengan merubah parameter di configure.sh sebelum melakukan kompilasi ccminer. 
+Mesin dengan chipset selain Cortex A53 masih mungkin menggunakan repositori ini dengan merubah parameter di berkas configure.sh sebelum melakukan kompilasi ccminer. 
 Langkah lebih jelas tertulis di bawah.
 
-Bagi siapapun yang menggunakan repositori ini, jangan sampai lupa merubah parameter di config.json.
+Bagi siapapun yang menggunakan repositori ini, jangan sampai lupa merubah parameter di berkas config.json.
 Utamanya alamat dompet Verus, pool maupun nama worker.
 
 Tanpa lebih banyak fafifu dan wasweswos, mari meracik mesin cuan..
@@ -68,7 +68,7 @@ nano config.json
 ~/ccminer-v1808/start.sh
 ```
 
-5. BONUS
+5. BONUS!!
    Atur agar ccminer dipanggil setelah gawai booting dan langsung nambang
 ```
 cd && cd && cd && nano ../usr/etc/bash.bashrc
