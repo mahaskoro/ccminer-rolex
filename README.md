@@ -1,15 +1,8 @@
-# Termux CCMiner untuk Vivo Y81 1808
+# Termux CCMiner untuk Cortex A53 Lolipop
 
 Based on: https://github.com/Darktron/ccminer
 
-Repositori ini merupakan adaptasi ccminer pada Termux untuk penambangan koin Verus dengan menggunakan mesin Vivo Y81 (1808).
-
-Meskipun begitu, tidak menutup kemungkinan digunakan pada mesin lain dengan spesifikasi yang mirip.
-Kunci utama dari konfigurasi repositori ini adalah koin Verus, Android 7 dan chipset Cortex A53.
-
-Jika ingin menggunakan hape untuk menambang koin selain Verus, harap melakukan riset terlebih dahulu dan melakukan penyesuaian-penyesuaian yang diperlukan.
-
-Mesin dengan Android 5 dan 6 tidak bisa menggunakan repositori ini karena perbedaan versi Termux dan begitu pula paket-paket pendukungnya.
+Repositori ini merupakan adaptasi ccminer pada Termux untuk penambangan koin Verus dengan menggunakan mesin Cortex A53 Quad-Core Lolipop.
 
 Mesin dengan chipset selain Cortex A53 masih mungkin menggunakan repositori ini dengan merubah parameter di berkas configure.sh sebelum melakukan kompilasi ccminer. 
 Langkah lebih jelas tertulis di bawah.
@@ -27,10 +20,7 @@ Lanjutkan dengan instalasi, konfigurasi dan kompilasi. Jalankan baris perintah-p
 
 1. Memasang clang dan paket-paket lain yang diperlukan:
 ```
-yes | pkg update && pkg upgrade -y
-```
-```
-yes | pkg install libjansson build-essential clang binutils git -y
+yes | pkg install libjansson build-essential git -y
 ```
 
 2. Atur environment & kloning repo:
@@ -38,10 +28,10 @@ yes | pkg install libjansson build-essential clang binutils git -y
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 ```
 ```
-git clone https://github.com/mahaskoro/ccminer-v1808.git
+git clone https://github.com/mahaskoro/ccminer-a53loli.git
 ```
 ```
-cd ccminer-v1808
+cd ccminer-a53loli
 ```
 ```
 chmod +x build.sh configure.sh autogen.sh start.sh
@@ -65,7 +55,7 @@ nano config.json
    Berikutnya lakukan tes hasil kompilasi miner:
 
 ```
-~/ccminer-v1808/start.sh
+~/ccminer-a53loli/start.sh
 ```
 
 5. BONUS!!
@@ -75,5 +65,5 @@ cd && cd && cd && nano ../usr/etc/bash.bashrc
 ``` 
    Salin perintah ini kebaris paling bawah;
 ```
-cd ccminer-v1808/&&./start.sh
+cd ccminer-a53loli/&&./start.sh
 ``` 
