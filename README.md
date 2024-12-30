@@ -2,7 +2,24 @@
 
 Based on: https://github.com/Darktron/ccminer
 
-Install arm64-v8a Termux versi 118 : https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
+Repositori ini merupakan adaptasi ccminer pada Termux untuk mesin Vivo Y81 (1808) untuk menambang koin Verus.
+
+Meskipun begitu tdak menutup kemungkinan digunakan pada mesin lain dengan spesifikasi yang mirip.
+Kunci utama dari konfigurasi repositori ini adalah chipset koin Verus, Android 7 dan chipset Cortex A53.
+
+Jika ingin menggunakan hape untuk menambang selain koin Verus, harap melakukan riset terlebih dahulu dan melakukan penyesuaian-penyesuaian yang diperlukan.
+
+Mesin dengan Android 5 dan 6 tidak bisa menggunakan repositori ini karena perbedaan versi Termux yang berbeda dan begitu pula paket-paket pendukungnya.
+
+Mesin dengan chipset selain Cortex A53 masih mungkin menggunakan repositori ini dengan merubah parameter di configure.sh sebelum melakukan kompilasi ccminer. 
+Langkah lebih jelas tertulis di bawah.
+
+Bagi siapapun yang menggunakan repositori ini, jangan sampai lupa merubah parameter di config.json.
+Utamanya alamat dompet Verus, pool maupun nama worker.
+
+Tanpa lebih banyak fafifu dan wasweswos, mari meracik mesin cuan..
+
+Sebelum meracik ccminer, install Termux arm64-v8a versi 118 : https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk
 
 Untuk cek rilis Termux terbaru : https://github.com/termux/termux-app/releases
 
@@ -28,6 +45,11 @@ cd ccminer-v1808
 ```
 ```
 chmod +x build.sh configure.sh autogen.sh start.sh
+```
+
+Untuk selain Chipset Cortex A53, lakukan langkah berikut sebelum langkah selanjutnya
+```
+nano configure.sh
 ```
 
 3. Kompilasikan ccminer:
