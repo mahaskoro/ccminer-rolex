@@ -23,7 +23,7 @@ Sebelum meracik ccminer, install Termux arm64-v8a versi 118 : https://github.com
 
 Untuk cek rilis Termux terbaru : https://github.com/termux/termux-app/releases
 
-Lanjutkan dengan instalasi, konfigurasi dan kompilasi :
+Lanjutkan dengan instalasi, konfigurasi dan kompilasi. Jalankan baris perintah-perintah berikut pada Termux :
 
 1. Memasang clang dan paket-paket lain yang diperlukan:
 ```
