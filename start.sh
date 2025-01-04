@@ -1,2 +1,2 @@
 #!/bin/sh
-~/ccminer-a53loli/ccminer -c ~/ccminer-a53loli/config.json
+~/ccminer-rolex/ccminer -c ~/ccminer-rolex/config.json
