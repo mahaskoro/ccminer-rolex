@@ -64,6 +64,7 @@ CXX=clang++ CC=clang ./build.sh
 ```
 
 5. Tes miner:
+
    Sebelum melakukan tes, atur dulu pool, dompet dan nama worker
 ```
 nano config.json
@@ -75,6 +76,7 @@ nano config.json
 ```
 
 6. BONUS!!
+
    Atur agar ccminer langsung nambang setelah dipanggil oleh triger auto-start
 ```
 cd && cd && cd && nano ../usr/etc/bash.bashrc
@@ -90,4 +92,5 @@ https://f-droid.org/id/packages/com.jens.automation2/
 atau software apa saja yang penting berfungsi untuk memanggil termux setelah mesin nyala.
 
 Tinggal merakit agar ketika ada arus listrik mesin otomatis menyala -> auto-start -> nambang.
+
 Selamat menambang bahan tambang galian c++ ...
