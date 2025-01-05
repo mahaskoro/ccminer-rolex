@@ -86,9 +86,9 @@ cd && cd && cd && nano ../usr/etc/bash.bashrc
 cd ccminer-rolex/&&./start.sh
 ``` 
    Untuk triger auto-start bisa digunakan Automation :
-```
+
 https://f-droid.org/id/packages/com.jens.automation2/
-```
+
    atau software apa saja yang penting berfungsi untuk memanggil termux setelah mesin nyala.
 
 Tinggal merakit agar ketika ada arus listrik mesin otomatis menyala -> auto-start -> nambang.
