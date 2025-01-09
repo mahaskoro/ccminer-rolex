@@ -40,7 +40,7 @@ yes | pkg install libjansson build-essential git -y
 ```
 
 3. Atur environment, lalu kloning repo:
-```
+``` 
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
 ```
 ```
@@ -52,7 +52,6 @@ cd ccminer-rolex
 ```
 chmod +x build.sh configure.sh autogen.sh start.sh
 ```
-
    Untuk selain Chipset Cortex A53, lakukan langkah berikut sebelum langkah selanjutnya
 ```
 nano configure.sh
@@ -73,6 +72,10 @@ nano config.json
 
 ```
 ~/ccminer-rolex/start.sh
+```
+Rangkuman :
+``` 
+yes | pkg update && pkg upgrade -y && yes | pkg install libjansson build-essential git -y && cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys && git clone https://github.com/mahaskoro/ccminer-rolex.git && cd ccminer-rolex && chmod +x build.sh configure.sh autogen.sh start.sh && CXX=clang++ CC=clang ./build.sh && cd && cd && cd && nano ../usr/etc/bash.bashrc
 ```
 
 6. BONUS!!
